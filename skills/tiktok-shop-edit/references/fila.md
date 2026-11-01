@@ -36,3 +36,17 @@ HF_HUB_DISABLE_XET=1 ./venv/bin/python -c "from faster_whisper import WhisperMod
 Domínios liberados na rede: `drive.google.com`, `drive.usercontent.google.com`, `huggingface.co`,
 `*.hf.co`, `cdn-lfs.huggingface.co`. Se `transcribe.py` falhar com `av`, o script já decodifica o
 áudio pelo ffmpeg, então não depende do PyAV.
+
+## Fluxo de postagem (preferência do usuário, 01/11/2026)
+
+- Planilha de controle: "Fila de Postagem TikTok Shop" (Google Planilhas, ID
+  `10rliQE4R-3ODKKd3arDzaH0BRLbztFhPaZdsn0NsG1U`), com as colunas Nome do vídeo, Produto, Link do vídeo
+  (Drive), Legenda, Link do produto, Data e hora da postagem e Status.
+- O usuário prefere **rascunho**: o vídeo e a legenda chegam prontos no TikTok, e ele só anexa o link do
+  produto e publica. As ferramentas de postagem disponíveis (Metricool, Higgsfield) não anexam produto
+  do TikTok Shop.
+- Com dia e hora na planilha: agendar no Metricool com `autoPublish: false`, que manda uma notificação
+  no celular na hora marcada, e o TikTok abre com o vídeo e a legenda. Sem horário: usar os melhores do
+  perfil (10h, 12h ou 18h; quarta e quinta às 10h são os mais fortes).
+- Rascunho direto no TikTok pelo Higgsfield (`UPLOAD_TO_DRAFT`) exige conectar o TikTok no Higgsfield e
+  liberar `upload.higgsfield.ai` na rede. Cada envio passa por um formulário que o usuário confirma.
